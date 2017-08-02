@@ -13,7 +13,7 @@
 function handValue (hand) {
   console.log("My hand is: " + hand);
   let myHandValue = 0;
-  moveAcesToEnd(hand);
+    moveAcesToEnd(hand);
   for (let i=0; i<hand.length; i++) {
     if (hand[i] === "J" || hand[i] === "Q" || hand[i] === "K") {
       myHandValue += 10;
@@ -44,6 +44,9 @@ function handValue (hand) {
         case '9':
           myHandValue += 9;
           break;
+        case '10':
+          myHandValue += 10;
+          break; 
         default:
           break;
       }
