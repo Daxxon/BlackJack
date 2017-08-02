@@ -60,6 +60,7 @@ function handValue (hand) {
       return "Invalid hand, cheater."
     }
   }
+  console.log("My Sorted Hand is: " + hand);
   console.log("My hand value is: " + myHandValue);
   return myHandValue;
 }
