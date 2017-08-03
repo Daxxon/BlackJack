@@ -18,7 +18,7 @@ function handValue (hand) {
     if (hand[i] === "J" || hand[i] === "Q" || hand[i] === "K") {
       myHandValue += 10;
       // console.log(myHandValue);
-    } else if (hand[i] === '2' || hand[i] === '3' || hand[i] === '4' || hand[i] === '5' || hand[i] === '6' || hand[i] === '7' || hand[i] === '8' || hand[i] === '9') {
+    } else if (hand[i] === '2' || hand[i] === '3' || hand[i] === '4' || hand[i] === '5' || hand[i] === '6' || hand[i] === '7' || hand[i] === '8' || hand[i] === '9' || hand[i] === '10') {
       switch(hand[i]) {
         case '2':
           myHandValue += 2;
@@ -46,7 +46,7 @@ function handValue (hand) {
           break;
         case '10':
           myHandValue += 10;
-          break; 
+          break;
         default:
           break;
       }
